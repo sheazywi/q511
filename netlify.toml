@@ -1,0 +1,23 @@
+
+[[redirects]]
+  from = "/q511/*"
+  to = "https://www.quebec511.info/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/Carte/*"
+  to = "https://www.quebec511.info/Carte/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/Images/*"
+  to = "https://www.quebec511.info/Images/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/Images/*"
+  [headers.values]
+  Cache-Control = "no-cache"

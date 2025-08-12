@@ -1,0 +1,11 @@
+
+{
+  "rewrites": [
+    { "source": "/q511/:path*", "destination": "https://www.quebec511.info/:path*" },
+    { "source": "/Carte/:path*", "destination": "https://www.quebec511.info/Carte/:path*" },
+    { "source": "/Images/:path*", "destination": "https://www.quebec511.info/Images/:path*" }
+  ],
+  "headers": [
+    { "source": "/Images/:path*", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
+  ]
+}
